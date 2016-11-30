@@ -4,5 +4,4 @@
 简单的封装了，觉得还是得写个东西出来玩玩，自己的东西能让别人用，也是一件很开心的事情。当然东西好别人才会用，今天只
 是一个草草的总结归档而已，闲暇的时候修改完再上传吧！！
 
-
-
+![image] (https://raw.githubusercontent.com/HersonIQ/IQEngUICamera/master/images/123.gif)
