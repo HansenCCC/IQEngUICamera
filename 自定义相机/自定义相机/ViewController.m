@@ -2,7 +2,7 @@
 //  ViewController.m
 //  自定义相机
 //
-//  Created by 力王 on 16/11/17.
+//  Created by 程恒盛s on 16/11/17.
 //  Copyright © 2016年 Herson. All rights reserved.
 //
 
