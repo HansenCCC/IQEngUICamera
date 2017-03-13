@@ -20,6 +20,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.sessionView.devicePosition = AVCaptureDevicePositionBack;
+    [self.sessionView startRunning];
+    
+    
     self.takePhotoButton = [[UIButton alloc] init];
     [self.takePhotoButton setImage:[UIImage imageNamed_IQEngUICamera:@"IQEngUICameraTakePhoto.png"] forState:UIControlStateNormal];
     [self.takePhotoButton addTarget:self action:@selector(takePhoto) forControlEvents:UIControlEventTouchUpInside];

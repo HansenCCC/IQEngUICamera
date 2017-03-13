@@ -137,13 +137,15 @@ DEF_EnumTypeCategories(IQEngAVCaptureSessionPreset, (
     
     AVCaptureDevice *newCamera = nil;
     AVCaptureDeviceInput *newInput = nil;
+    
+    newCamera = [self cameraWithPosition:devicePosition];
     //拿到另外一个摄像头位置
-    AVCaptureDevicePosition position = [[_input device] position];
-    if (position == AVCaptureDevicePositionFront){
-        newCamera = [self cameraWithPosition:AVCaptureDevicePositionBack];
-    }else {
-        newCamera = [self cameraWithPosition:AVCaptureDevicePositionFront];
-    }
+//    AVCaptureDevicePosition position = [[_input device] position];
+//    if (position == AVCaptureDevicePositionFront){
+//        newCamera = [self cameraWithPosition:AVCaptureDevicePositionBack];
+//    }else {
+//        newCamera = [self cameraWithPosition:AVCaptureDevicePositionFront];
+//    }
     //生成新的输入
     newInput = [AVCaptureDeviceInput deviceInputWithDevice:newCamera error:nil];
     if (newInput != nil) {
