@@ -1,7 +1,6 @@
 # IQEngUICamera
 自定义相机、二维码扫描、人脸追踪、自定义身份证证件照
-缘故：系统相机跟需求有点不一样，需要自定义相机。一顿百度谷歌之后，总结了出了这个dome。现在想把dome内容写好，只是
-简单的封装了，觉得还是得写个东西出来玩玩，自己的东西能让别人用，也是一件很开心的事情。当然东西好别人才会用，今天只
-是一个草草的总结归档而已，闲暇的时候修改完再上传吧！！
+缘故：系统相机跟需求有点不一样，需要自定义相机。一顿百度谷歌之后，总结了出了这个dome。若想自定义相机，只需集成我的相机基类，避开系统设置繁琐代码，轻松搞定。
 
+娱人愚己，自娱自乐。  i'm here https://www.zhihu.com/people/EngCCC
 ![image] (https://raw.githubusercontent.com/HersonIQ/IQEngUICamera/master/images/123.gif)
