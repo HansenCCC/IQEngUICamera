@@ -10,6 +10,7 @@
 #import "IQEngUIQRCodeViewController.h"
 #import "IQEngUIFaceViewController.h"
 #import "IQEngUIPhotoViewController.h"
+#import "IQEngUIIDCardScanViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic, strong) UITableView *tableView;
@@ -28,8 +29,7 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"UITableViewCell"];
     [self.view addSubview:self.tableView];
     
-    self.datas = @[@"二维码扫描",@"人脸追踪识别",@"自定义相机"];
-    
+    self.datas = @[@"二维码扫描",@"人脸追踪识别",@"自定义相机",@"身份证拍照"];
 }
 #pragma mark - UITableViewDelegate&UITableViewDataSource
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -75,6 +75,18 @@
                 NSLog(@"%@",image);
             };
             [self.navigationController pushViewController:iqEngVC animated:YES];
+        }
+            break;
+        case 3:
+        {
+            IQEngUIIDCardScanViewController *v = [[IQEngUIIDCardScanViewController alloc] init];
+            v.shouldWriteToSavedPhotos = YES;
+//            __weak typeof(self) wself = self;
+            v.whenFinsh = ^(UIImage *image){
+//                __weak typeof(self) self = wself;
+                NSLog(@"image:%@",image);
+            };
+            [self presentViewController:v animated:YES completion:nil];
         }
             break;
         default:

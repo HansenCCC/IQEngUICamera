@@ -14,6 +14,9 @@
 		306260A61DEE7C4300E35102 /* IQEngUICamera.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 306260A51DEE7C4300E35102 /* IQEngUICamera.bundle */; };
 		306260A91DEE7C9A00E35102 /* NSBundle+IQEngUICamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 306260A81DEE7C9A00E35102 /* NSBundle+IQEngUICamera.m */; };
 		306260AC1DEE7EE600E35102 /* UIImage+IQEngUICamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 306260AB1DEE7EE600E35102 /* UIImage+IQEngUICamera.m */; };
+		30760F711E7790B600BA06B9 /* IQEngUIBackGroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30760F6E1E7790B600BA06B9 /* IQEngUIBackGroundView.m */; };
+		30760F721E7790B600BA06B9 /* IQEngUIIDCardScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30760F701E7790B600BA06B9 /* IQEngUIIDCardScanViewController.m */; };
+		30760F751E77915800BA06B9 /* UIView+IQEngUICamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 30760F741E77915800BA06B9 /* UIView+IQEngUICamera.m */; };
 		3080633C1DDD59C500D8C2F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080633B1DDD59C500D8C2F4 /* main.m */; };
 		3080633F1DDD59C500D8C2F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3080633E1DDD59C500D8C2F4 /* AppDelegate.m */; };
 		308063421DDD59C500D8C2F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308063411DDD59C500D8C2F4 /* ViewController.m */; };
@@ -51,6 +54,12 @@
 		306260A81DEE7C9A00E35102 /* NSBundle+IQEngUICamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+IQEngUICamera.m"; path = "libs/NSBundle+IQEngUICamera.m"; sourceTree = "<group>"; };
 		306260AA1DEE7EE600E35102 /* UIImage+IQEngUICamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+IQEngUICamera.h"; path = "libs/UIImage+IQEngUICamera.h"; sourceTree = "<group>"; };
 		306260AB1DEE7EE600E35102 /* UIImage+IQEngUICamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+IQEngUICamera.m"; path = "libs/UIImage+IQEngUICamera.m"; sourceTree = "<group>"; };
+		30760F6D1E7790B600BA06B9 /* IQEngUIBackGroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQEngUIBackGroundView.h; sourceTree = "<group>"; };
+		30760F6E1E7790B600BA06B9 /* IQEngUIBackGroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQEngUIBackGroundView.m; sourceTree = "<group>"; };
+		30760F6F1E7790B600BA06B9 /* IQEngUIIDCardScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQEngUIIDCardScanViewController.h; sourceTree = "<group>"; };
+		30760F701E7790B600BA06B9 /* IQEngUIIDCardScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQEngUIIDCardScanViewController.m; sourceTree = "<group>"; };
+		30760F731E77915800BA06B9 /* UIView+IQEngUICamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IQEngUICamera.h"; sourceTree = "<group>"; };
+		30760F741E77915800BA06B9 /* UIView+IQEngUICamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IQEngUICamera.m"; sourceTree = "<group>"; };
 		308063371DDD59C500D8C2F4 /* 自定义相机.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "自定义相机.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3080633B1DDD59C500D8C2F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3080633D1DDD59C500D8C2F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,12 +103,52 @@
 		306260AD1DEE7EEA00E35102 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				30760F731E77915800BA06B9 /* UIView+IQEngUICamera.h */,
+				30760F741E77915800BA06B9 /* UIView+IQEngUICamera.m */,
 				306260A71DEE7C9A00E35102 /* NSBundle+IQEngUICamera.h */,
 				306260A81DEE7C9A00E35102 /* NSBundle+IQEngUICamera.m */,
 				306260AA1DEE7EE600E35102 /* UIImage+IQEngUICamera.h */,
 				306260AB1DEE7EE600E35102 /* UIImage+IQEngUICamera.m */,
 			);
 			name = base;
+			sourceTree = "<group>";
+		};
+		30760F761E7791DE00BA06B9 /* dome1 */ = {
+			isa = PBXGroup;
+			children = (
+				308067C31DE4157200D8C2F4 /* IQEngUIQRCodeViewController.h */,
+				308067C41DE4157200D8C2F4 /* IQEngUIQRCodeViewController.m */,
+			);
+			name = dome1;
+			sourceTree = "<group>";
+		};
+		30760F771E7791E900BA06B9 /* dome2 */ = {
+			isa = PBXGroup;
+			children = (
+				306260961DEBE6A900E35102 /* IQEngUIFaceViewController.h */,
+				306260971DEBE6A900E35102 /* IQEngUIFaceViewController.m */,
+			);
+			name = dome2;
+			sourceTree = "<group>";
+		};
+		30760F781E77921000BA06B9 /* dome3 */ = {
+			isa = PBXGroup;
+			children = (
+				306260991DEBE87100E35102 /* IQEngUIPhotoViewController.h */,
+				3062609A1DEBE87100E35102 /* IQEngUIPhotoViewController.m */,
+			);
+			name = dome3;
+			sourceTree = "<group>";
+		};
+		30760F791E77922000BA06B9 /* dome4 */ = {
+			isa = PBXGroup;
+			children = (
+				30760F6D1E7790B600BA06B9 /* IQEngUIBackGroundView.h */,
+				30760F6E1E7790B600BA06B9 /* IQEngUIBackGroundView.m */,
+				30760F6F1E7790B600BA06B9 /* IQEngUIIDCardScanViewController.h */,
+				30760F701E7790B600BA06B9 /* IQEngUIIDCardScanViewController.m */,
+			);
+			name = dome4;
 			sourceTree = "<group>";
 		};
 		3080632E1DDD59C500D8C2F4 = {
@@ -126,12 +175,10 @@
 				308063621DDD59FC00D8C2F4 /* libs */,
 				308063401DDD59C500D8C2F4 /* ViewController.h */,
 				308063411DDD59C500D8C2F4 /* ViewController.m */,
-				308067C31DE4157200D8C2F4 /* IQEngUIQRCodeViewController.h */,
-				308067C41DE4157200D8C2F4 /* IQEngUIQRCodeViewController.m */,
-				306260961DEBE6A900E35102 /* IQEngUIFaceViewController.h */,
-				306260971DEBE6A900E35102 /* IQEngUIFaceViewController.m */,
-				306260991DEBE87100E35102 /* IQEngUIPhotoViewController.h */,
-				3062609A1DEBE87100E35102 /* IQEngUIPhotoViewController.m */,
+				30760F761E7791DE00BA06B9 /* dome1 */,
+				30760F771E7791E900BA06B9 /* dome2 */,
+				30760F781E77921000BA06B9 /* dome3 */,
+				30760F791E77922000BA06B9 /* dome4 */,
 				3080633A1DDD59C500D8C2F4 /* Supporting Files */,
 			);
 			path = "自定义相机";
@@ -283,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30760F751E77915800BA06B9 /* UIView+IQEngUICamera.m in Sources */,
 				308063651DDD5B8F00D8C2F4 /* IQEngUIAVCaptureSessionView_base.m in Sources */,
 				308067C51DE4157200D8C2F4 /* IQEngUIQRCodeViewController.m in Sources */,
 				3062609B1DEBE87100E35102 /* IQEngUIPhotoViewController.m in Sources */,
@@ -294,8 +342,10 @@
 				3080633F1DDD59C500D8C2F4 /* AppDelegate.m in Sources */,
 				3062609E1DEC3A7500E35102 /* IQEngUIQRCodeView.m in Sources */,
 				3080633C1DDD59C500D8C2F4 /* main.m in Sources */,
+				30760F711E7790B600BA06B9 /* IQEngUIBackGroundView.m in Sources */,
 				306260951DEBD07D00E35102 /* IQEngUIPhotoSessionView.m in Sources */,
 				306260981DEBE6A900E35102 /* IQEngUIFaceViewController.m in Sources */,
+				30760F721E7790B600BA06B9 /* IQEngUIIDCardScanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

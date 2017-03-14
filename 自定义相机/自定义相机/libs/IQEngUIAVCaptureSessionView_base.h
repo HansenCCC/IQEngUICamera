@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "UIImage+IQEngUICamera.h"
+#import "UIView+IQEngUICamera.h"
+
 
 //添加enum类型与NSString转换的便捷宏###########################{
 //enum=>NSString

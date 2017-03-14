@@ -10,4 +10,7 @@
 #import "NSBundle+IQEngUICamera.h"
 @interface UIImage (IQEngUICamera)
 + (UIImage *)imageNamed_IQEngUICamera:(NSString *)name;
++(UIImage*)image:(UIImage *)image scaleToSize:(CGSize)size;
++(UIImage *)imageFromImage:(UIImage *)image inRect:(CGRect)rect;
+
 @end
